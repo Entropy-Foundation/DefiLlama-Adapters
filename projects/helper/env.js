@@ -25,6 +25,7 @@ const DEFAULTS = {
   HEMI_RPC: 'https://rpc.hemi.network/rpc',
   MOVE_RPC: 'https://mainnet.movementnetwork.xyz',
   HEMI_RPC_MULTICALL: '0xca11bde05977b3631167028862be2a173976ca11',
+  SUPRA_RPC: 'https://rpc-mainnet.supra.com',
 }
 
 const ENV_KEYS = [

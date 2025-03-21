@@ -54,6 +54,9 @@ const fixBalancesTokens = {
   stellar: {
     XLM: { coingeckoId: 'stellar', decimals: 7 },
     'USDC-GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN-1': { coingeckoId: 'usd-coin', decimals: 7 },
+  },
+  supra: {
+    '0x1::supra_coin::SupraCoin': { coingeckoId: "supra", decimals: 8 },
   }
 }
 

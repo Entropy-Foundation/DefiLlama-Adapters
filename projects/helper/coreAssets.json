@@ -840,6 +840,9 @@
     "MOON": "0xd71e041f0d9c871e68604699aa109ead5643ced548f9d216ddb89702968e5458::moon_coin::MoonCoin",
     "CELL": "0x2ebb2ccac5e027a87fa0e2e5f656a3a4238d6a48d93ec9b610d570fc0aa0df12"
   },
+  "supra": {
+    "SUP": "0x1::supra_coin::SupraCoin"
+  },
   "dogechain": {
     "WWDOGE": "0xb7ddc6414bf4f5515b52d8bdd69973ae205ff101",
     "DC": "0x7b4328c127b85369d9f82ca0503b000d09cf9180",
