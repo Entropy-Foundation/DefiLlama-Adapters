@@ -58,9 +58,6 @@ const fixBalancesTokens = {
     XLM: { coingeckoId: 'stellar', decimals: 7 },
     'USDC-GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN-1': { coingeckoId: 'usd-coin', decimals: 7 },
   },
-  supra: {
-    '0x1::supra_coin::SupraCoin': { coingeckoId: "supra", decimals: 8 },
-  },
   winr: {
     '0xd77b108d4f6cefaa0cae9506a934e825becca46e': { coingeckoId: 'winr-protocol', decimals: 18 }, // WINR on arbitrum
     '0xbf6fa9d2bf9f681e7b6521b49cf8eccf9ad8d31d': { coingeckoId: 'winr-protocol', decimals: 18 }, // WWINR on winr chain
