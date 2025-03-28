@@ -1,8 +1,11 @@
+const sdk = require("@defillama/sdk");
 const http = require("../http");
 const { getEnv } = require("../env");
 const rpcURL = () => getEnv("SUPRA_RPC");
 
 const MAX_NUM_OF_ITEMS_IN_PAGINATION_REQUEST = 10;
+const COIN_INFO_STRUCT_TYPE =
+  "0x0000000000000000000000000000000000000000000000000000000000000001::coin::CoinInfo";
 
 const sendGetRequest = async (endpoint) => {
   return await http.get(`${rpcURL()}${endpoint}`);
@@ -65,4 +68,5 @@ module.exports = {
   getResourceData,
   invokeViewFunction,
   getTableItemByKey,
+  COIN_INFO_STRUCT_TYPE,
 };
