@@ -24,6 +24,7 @@ const DEFAULTS = {
   TRON_RPC: 'https://api.trongrid.io',
   MOVE_RPC: 'https://mainnet.movementnetwork.xyz',
   SUPRA_RPC: 'https://rpc-mainnet.supra.com',
+  HEDERA_RPC_MULTICALL: '0x18fa376d92511dd04090566ab6144847c03557d8', // Hedera Multicall3 contract
 }
 
 const ENV_KEYS = [
