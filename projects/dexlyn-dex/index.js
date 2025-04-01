@@ -46,22 +46,17 @@ const calculateDexlynTVL = async (api) => {
           [xCoinType, yCoinType, curveType],
           []
         );
-        let nonNegligibleReserves = reserveX !== "0" && reserveY !== "0";
         if (isCoreAssetX && isCoreAssetY) {
           sdk.util.sumSingleBalance(balances, xCoinType, reserveX);
           sdk.util.sumSingleBalance(balances, yCoinType, reserveY);
         } else if (isCoreAssetX) {
-          sdk.util.sumSingleBalance(balances, xCoinType, reserveX);
-          if (nonNegligibleReserves)
-            sdk.util.sumSingleBalance(balances, xCoinType, reserveX);
+          sdk.util.sumSingleBalance(balances, xCoinType, reserveX * 2);
         } else if (isCoreAssetY) {
-          sdk.util.sumSingleBalance(balances, yCoinType, reserveY);
-          if (nonNegligibleReserves)
-            sdk.util.sumSingleBalance(balances, yCoinType, reserveY);
+          sdk.util.sumSingleBalance(balances, yCoinType, reserveY * 2);
         }
       }
     }
-  }  
+  }
   return transformBalances(chain, balances);
 };
 
